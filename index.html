@@ -51,6 +51,7 @@
 
         a:hover {
             background-color: var(--secondary);
+            color: var(--main);
         }
 
         #people {
@@ -62,11 +63,44 @@
             padding: 0;
             line-height: 1.2rem;
         }
+
+        .nav-item {
+            display: inline-block;
+            margin: 5px 10px;
+        }
+
+        .label {
+            padding: 5px;
+            border-radius: 2px;
+            text-transform: uppercase;
+
+            border: solid var(--secondary) 1px;
+        }
+
+        .nav-item .label.current-page {
+            padding-bottom: 8px;
+            /* border-bottom:2px solid; */
+            background: #145e64;
+            padding: 5px;
+            border: none;
+            color: #dacfb1;
+            border-radius: 2px;
+        }
     </style>
 </head>
 
 <body>
     <img src="assets/mm_logo_website.png" alt="" id="logo">
+    <nav class="nav-menu">
+        <ul class="inline-nav ">
+            <li class="nav-item nav-item--posts">
+                <a href="https://midnightmunchies.games/" class="label current-page">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://mm-games.tumblr.com/" class="label">Blog</a>
+            </li>
+        </ul>
+    </nav>
     <p>
         Midnight Munchies is a games studio by <span id="people">Fer, Jonas
             & Brin</span> with music by <a href="https://www.jamesmusic.co.uk/">James Evans</a> based
